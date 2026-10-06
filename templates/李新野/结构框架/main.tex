@@ -1,0 +1,44 @@
+% !TeX program = xelatex
+\documentclass[UTF8,openany,10pt,fontset=fandol]{ctexbook}
+\input{config.tex}
+\input{style.tex}
+
+\begin{document}
+\frontmatter
+\ifshowtitle
+  \input{content/title.tex}
+\fi
+\ifshowcopyright
+  \input{content/copyright.tex}
+  \clearpage
+\fi
+\ifshowdedication
+  \input{content/dedication.tex}
+  \clearpage
+\fi
+\ifshowauthor
+  \chapter*{作者简介}
+  \addcontentsline{toc}{chapter}{作者简介}
+  \input{content/author.tex}
+\fi
+\ifshowcontents
+  \tableofcontents
+\fi
+\ifshowpreface
+  \chapter*{前言}
+  \addcontentsline{toc}{chapter}{前言}
+  \input{content/preface.tex}
+\fi
+
+\mainmatter
+\input{content/chapters.tex}
+\ifshowclosing
+  \chapter*{结语}
+  \addcontentsline{toc}{chapter}{结语}
+  \input{content/closing.tex}
+\fi
+\ifshowappendix
+  \appendix
+  \input{content/appendix.tex}
+\fi
+\end{document}
