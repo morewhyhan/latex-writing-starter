@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Book: Build",
+      "type": "process",
+      "command": "pwsh",
+      "windows": {"command": "powershell"},
+      "args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/build.ps1", "-Language", "${input:bookLanguage}"],
+      "group": {"kind": "build", "isDefault": true},
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {"id": "bookLanguage", "type": "promptString", "description": "源稿语言目录标识", "default": "Chinese"}
+  ]
+}

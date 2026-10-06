@@ -1,0 +1,11 @@
+{
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.inlineSuggest.enabled": false
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.inlineSuggest.enabled": false
+  },
+  "latex-workshop.latex.autoBuild.run": "never"
+}

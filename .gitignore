@@ -1,0 +1,15 @@
+/build/
+/.tmp/
+/releases/*/
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.lof
+*.lot
+.DS_Store
+Thumbs.db

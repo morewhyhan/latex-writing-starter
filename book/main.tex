@@ -1,0 +1,26 @@
+% !TeX program = xelatex
+\documentclass[UTF8,openany,10pt,fontset=fandol]{ctexbook}
+\input{config.tex}
+\input{style.tex}
+
+\begin{document}
+\frontmatter
+\begin{titlepage}
+  \centering
+  \vspace*{0.2\textheight}
+  {\Huge\bfseries \booktitle\par}
+  \vspace{2cm}
+  {\Large \bookauthor\par}
+  \vfill
+  {\bookdate\quad \bookversion\par}
+\end{titlepage}
+\tableofcontents
+\input{content/preface.tex}
+
+\mainmatter
+\input{content/chapters.tex}
+\input{content/closing.tex}
+
+\appendix
+\input{content/appendix.tex}
+\end{document}
